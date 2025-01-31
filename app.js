@@ -1,7 +1,9 @@
 const express = require('express');
+import cors from 'cors';
 const app = express();
 const port = 3000;
 
+app.use(cors());
 app.get('/', (req, res) => {
 	// Get query params
 	const email = 'cyberraff@gmail.com';
@@ -18,7 +20,7 @@ app.get('/', (req, res) => {
 
 	const resData = {
 		email: email,
-		current_day: new Date().toLocaleString('en-US', { weekday: 'long' }),
+
 		utc_time: utcTime,
 
 		github_url: 'https://github.com/cyberraff/hng12-task-one',

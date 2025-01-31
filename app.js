@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 	const resData = {
 		email: email,
 
-		utc_time: utcTime,
+		current_datetime: utcTime,
 
 		github_url: 'https://github.com/cyberraff/hng12-task-one',
 	};

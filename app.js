@@ -21,8 +21,7 @@ app.get('/api', (req, res) => {
 		current_day: new Date().toLocaleString('en-US', { weekday: 'long' }),
 		utc_time: utcTime,
 
-		github_url:
-			'https://github.com/cyberraff/hngx-task-one/blob/main/app.js',
+		github_url: 'https://github.com/cyberraff/hng12-task-one',
 	};
 
 	res.send(resData);
